@@ -1,9 +1,12 @@
-.nav-container-child {
-     
-}
-
 :root {
     --main-text-color: #000000;
+    --title-text-color: ;
+    --main-text-font-style: ;
+    --title-text-font-style: ;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    text-align: center;
     
 }
 
@@ -14,6 +17,15 @@
     margin-right: auto;
     max-width: 1000px;
     align-items: flex-end;
+    list-style: none;
+}
+
+.nav-container-child {
+    justify-self: flex-end;
+    margin: auto;
+    flex-grow: 1;
+    list-style: none;
+    margin-right: 10px;
 }
 
 .nav-container-child:nth-child(1) {
@@ -21,20 +33,20 @@
     margin-right: 400px;
 }
 
-.main-title {
-    text-align: center;
-    
-}
+
+
+
 
 .nav-container-child:last-child {
     margin-right: 0px;
-    }
+}
 
-.nav-container-child {
-    justify-self: flex-end;
-    margin: auto;
-    flex-grow: 1;
-    list-style: none;
+.nav-container-child > li > a {
+    
+}
+
+.under-title-line {
+
 }
 
 .main-container { 
@@ -49,9 +61,10 @@
     height: 100px;
     margin: auto;
     width: 20%;
-    
+    max-width: 300px;
     margin-top: 10px;
     margin-right: 10px;
+    justify-self: flex-start;
 }
 
 .main-container-child > img {
@@ -59,9 +72,46 @@
 }
 
 .main-container-child-name {
-margin-right: 20px;
+    margin-right: 20px;
 }
 
 .main-container-child-price {
+max-width: 50px;
+}
+
+.second-title {
+    text-align: center;
+}
+
+.news-container {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.news-container-child {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 30%;
+    margin: auto;
+    margin-top: 10px;
+    margin-right: 10px;    
+}
+
+.news-container-child > button {
 
 }
+
+.news-main-text {
+    height: 100px;
+    padding-bottom: 10px;
+}
+
+.news-high-text {
+
+}
+
