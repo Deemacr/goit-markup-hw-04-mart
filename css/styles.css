@@ -19,8 +19,16 @@ body {
 }
 h1,h2,h3,h4,h5,h6 {
     text-align: center;
+    font-weight: bold;
+    color: var(--main-text-color);
+    text-transform: uppercase;
 }
 
+.nav-container a:hover, 
+.nav-container a:active, 
+.nav-container a:focus {
+    color: var(--supp-text-color);
+}
 .nav-container {
     display: flex;
     flex-wrap: wrap;
@@ -43,6 +51,8 @@ h1,h2,h3,h4,h5,h6 {
     color: var(--main-text-color);
 }
 
+.logo {
+}
 
 .nav-container-child > span {
     color: var(--supp-text-color);
@@ -111,6 +121,7 @@ max-width: 50px;
     justify-content: center;
     max-width: 1000px;
     margin: auto;
+    height: 500px;
 }
 
 .news-container-child {
