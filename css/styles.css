@@ -1,19 +1,31 @@
+@font-face {
+    font-family: 'DejaVu Sans';
+    src: url('/font/DejaVuSans/web_fonts/dejavusans_book_macroman/DejaVuSans-webfont.woff') format('woff');
+    font-style: normal;
+    font-weight: normal;
+         
+}
+
 :root {
     --main-text-color: #555252;
     --supp-text-color: #1abc9c;
     --third-text-color: #ffffff; 
-    --main-text-font-style:  ;
+    --main-text-font-style: 'DejaVu Sans', Arial, Helvetica, sans-serif;
     --title-text-font-style: ;
 }
 
+body {
+    font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif;;
+}
 h1,h2,h3,h4,h5,h6 {
-    text-align: center;    
+    text-align: center;
 }
 
 .nav-container {
     display: flex;
     flex-wrap: wrap;
     color: var(--main-text-color);
+    font-family: var(--main-text-font-style);
     margin-left: auto;
     margin-right: auto;
     max-width: 1000px;
@@ -39,6 +51,7 @@ h1,h2,h3,h4,h5,h6 {
 .nav-container-child:nth-child(1) {
     justify-self: flex-start;
     margin-right: 400px;
+    
 }
 
 
@@ -49,6 +62,7 @@ h1,h2,h3,h4,h5,h6 {
 .nav-container-child > a {
     text-decoration: none;
     color: #000000;
+    font-weight: bold;
 }
 
 
@@ -114,7 +128,6 @@ max-width: 50px;
 }
 
 .news-main-text {
-    height: 100px;
     padding-bottom: 10px;
 }
 
