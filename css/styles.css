@@ -1,148 +1,154 @@
 @font-face {
-    font-family: 'DejaVu Sans';
-    src: url('/fonts/DejaVuSans/web_fonts/dejavusans_book_macroman/DejaVuSans-webfont.woff') format('woff');
-    font-style: normal;
-    font-weight: normal;
-         
+  font-family: "DejaVu Sans";
+  src: url("/fonts/DejaVuSans/web_fonts/dejavusans_book_macroman/DejaVuSans-webfont.woff")
+    format("woff");
+  font-style: normal;
+  font-weight: normal;
 }
 
 :root {
-    --main-text-color: #555252;
-    --supp-text-color: #1abc9c;
-    --third-text-color: #ffffff; 
-    --main-text-font-style: 'DejaVu Sans', Arial, Helvetica, sans-serif;
-    --supp-text-font-style: ;
+  --main-text-color: #555252;
+  --supp-text-color: #1abc9c;
+  --third-text-color: #ffffff;
+  --main-text-font-style: "DejaVu Sans", Arial, Helvetica, sans-serif;
+  --supp-text-font-style: ;
 }
 
 body {
-    font-family: 'DejaVu Sans', Arial, Helvetica, sans-serif;;
-}
-h1,h2,h3,h4,h5,h6 {
-    text-align: center;
-    font-weight: bold;
-    color: var(--main-text-color);
-    text-transform: uppercase;
+  font-family: "DejaVu Sans", Arial, Helvetica, sans-serif;
 }
 
-.nav-container a:hover, 
-.nav-container a:active, 
-.nav-container a:focus {
-    color: var(--supp-text-color);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-align: center;
+  font-weight: bold;
+  color: var(--main-text-color);
+  text-transform: uppercase;
 }
+
 .nav-container {
-    display: flex;
-    flex-wrap: wrap;
-    color: var(--main-text-color);
-    font-family: var(--main-text-font-style);
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1000px;
-    align-items: flex-end;
-    list-style: none;
-    text-transform: uppercase;
-    text-decoration: none;
+  display: flex;
+  flex-wrap: wrap;
+  color: var(--main-text-color);
+  font-family: var(--main-text-font-style);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+  max-width: 1000px;
+  align-items: flex-end;
+  list-style: none;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
+.nav-container a:hover,
+.nav-container a:active,
+.nav-container a:focus {
+  color: var(--supp-text-color);
+}
 .nav-container-child {
-    justify-self: flex-end;
-    margin: auto;
-    flex-grow: 1;
-    margin-right: 10px;
-    color: var(--main-text-color);
-}
-
-.logo {
+  justify-self: flex-end;
+  margin: auto;
+  flex-grow: 1;
+  /* margin-right: 10px; */
+  color: var(--main-text-color);
 }
 
 .nav-container-child > span {
-    color: var(--supp-text-color);
+  color: var(--supp-text-color);
+  font-weight: bold;
 }
 
 .nav-container-child:nth-child(1) {
-    justify-self: flex-start;
-    margin-right: 400px;
-    
+  justify-self: flex-start;
+  margin-right: 450px;
 }
 
-
 .nav-container-child:last-child {
-    margin-right: 0px;
+  margin-right: 0px;
 }
 
 .nav-container-child > a {
-    text-decoration: none;
-    color: #000000;
-    font-weight: bold;
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+  font-size: 10px;
 }
 
-
-.under-title-line {
-
+.hr-title {
+  width: 165px;
+  height: 8px;
+  background-color: var(--supp-text-color);
+  border: 0px;
+  margin-bottom: 100px;
 }
 
-.main-container { 
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .main-container-child {
-    display: flex;
-    flex-wrap: wrap;
-    height: 100px;
-    margin: auto;
-    width: 20%;
-    max-width: 300px;
-    margin-top: 10px;
-    margin-right: 10px;
-    justify-self: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  /* height: 100px; */
+  margin: auto;
+  width: 20%;
+  max-width: 300px;
+  margin-top: 10px;
+  margin-right: 10px;
+  justify-self: flex-start;
+  margin-bottom: 10px;
 }
 
 .main-container-child > img {
-    width: 200px;
+  width: 200px;
 }
 
 .main-container-child-name {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 .main-container-child-price {
-max-width: 50px;
+  max-width: 50px;
 }
 
 .second-title {
-    text-align: center;
+  text-align: center;
+  margin-top: 10px;
 }
 
 .news-container {
-    display: flex;
-    list-style: none;
-    flex-wrap: wrap;
-    justify-content: center;
-    max-width: 1000px;
-    margin: auto;
-    height: 500px;
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1000px;
+  margin: auto;
+  height: 500px;
 }
 
 .news-container-child {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: 30%;
-    margin: auto;
-    margin-top: 10px;
-    margin-right: 10px;    
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 30%;
+  margin: auto;
+  margin-top: 10px;
+  margin-right: 10px;
 }
 
 .news-container-child > button {
-
 }
 
 .news-main-text {
-    padding-bottom: 10px;
+  padding-bottom: 10px;
 }
 
 .news-high-text {
-
 }
-
