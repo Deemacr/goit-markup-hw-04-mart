@@ -102,33 +102,46 @@ h6 {
   margin: auto;
   width: 20%;
   max-width: 255px;
-  margin-top: 10px;
-  margin-right: 10px;
+  margin-top: 30px;
+  margin-right: 30px;
+  margin-left: 30px;
   justify-self: flex-start;
+  text-transform: uppercase;
   /* margin-bottom: px; */
 }
 
 .main-container-child > img {
   width: 255px;
   height: 280px;
-  margin: 0px;
 }
 
 .main-container-child-name {
   margin: 0px;
-  width: 200px;
+  width: 190px;
+  height: 30px;
+  color: var(--third-text-color);
   background-color: var(--main-text-color);
+  font-weight: bolder;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .main-container-child-price {
   margin: 0px;
-  width: 55px;
+  width: 45px;
+  height: 30px;
+  color: var(--third-text-color);
   background-color: var(--price-tag-color);
+  font-weight: bolder;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .second-title {
   text-align: center;
-  margin-top: 10px;
+  margin-top: 100px;
 }
 
 .news-container {
@@ -136,7 +149,7 @@ h6 {
   list-style: none;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: auto;
   height: 500px;
 }
@@ -148,7 +161,7 @@ h6 {
   width: 30%;
   margin: auto;
   margin-top: 10px;
-  margin-right: 10px;
+  margin-right: 40px;
 }
 
 .news-container-child > button {
