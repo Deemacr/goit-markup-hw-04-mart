@@ -111,6 +111,21 @@ h6 {
   /* margin-bottom: px; */
 }
 
+.main-container-child:hover .main-container-child-name ,
+.main-container-child:focus .main-container-child-name ,
+.main-container-child:active .main-container-child-name { 
+  background-color: var(--supp-text-color);
+  cursor: pointer;
+}
+
+
+.main-container-child:hover .main-container-child-price ,
+.main-container-child:focus .main-container-child-price ,
+.main-container-child:active .main-container-child-price {
+  background-color: var(--price-tag-background);
+  cursor: pointer;
+}
+
 .main-container-child > img {
   width: 255px;
   height: 280px;
@@ -140,19 +155,20 @@ h6 {
   padding-bottom: 5px;
 }
 
-.main-container-child-name:hover ,
+/* .main-container-child-name:hover ,
 .main-container-child-name:focus ,
 .main-container-child-name:active {
   background-color: var(--supp-text-color);
   cursor: pointer;
-}
+} */
 
-.main-container-child-price:hover ,
+/* .main-container-child-price:hover ,
 .main-container-child-price:focus ,
 .main-container-child-price:active {
   background-color: var(--price-tag-background);
   cursor: pointer;
-}
+} */
+
 .second-title {
   text-align: center;
   margin-top: 100px;
