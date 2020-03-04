@@ -165,7 +165,8 @@ h6 {
   justify-content: center;
   max-width: 1200px;
   margin: auto;
-  height: 500px;
+  margin-bottom: 100px;
+  height: 600px;
 }
 
 .news-container-child {
