@@ -11,6 +11,7 @@
   --supp-text-color: #1abc9c;
   --third-text-color: #ffffff;
   --price-tag-color: #8c8c8c ; 
+  --price-tag-background: #7fd9c7 ; 
   --main-text-font-style: "DejaVu Sans", Arial, Helvetica, sans-serif;
   --supp-text-font-style: ;
 
@@ -139,6 +140,19 @@ h6 {
   padding-bottom: 5px;
 }
 
+.main-container-child-name:hover ,
+.main-container-child-name:focus ,
+.main-container-child-name:active {
+  background-color: var(--supp-text-color);
+  cursor: pointer;
+}
+
+.main-container-child-price:hover ,
+.main-container-child-price:focus ,
+.main-container-child-price:active {
+  background-color: var(--price-tag-background);
+  cursor: pointer;
+}
 .second-title {
   text-align: center;
   margin-top: 100px;
@@ -164,12 +178,31 @@ h6 {
   margin-right: 40px;
 }
 
+.news-container-child > hr {
+  width: 140px;
+  margin-left: 0px;
+  background-color: var(--supp-text-color);
+  height: 4px;
+  border: 0px;
+}
+
 .news-container-child > button {
+  margin-top: 10px;
+  width: 160px;
+  height: 50px;
+  background-color: var(--supp-text-color);
+  cursor: pointer;
+  border: 0px;
+  text-transform: capitalize;
+  color: var(--third-text-color);
+  border-radius: 5px;
 }
 
 .news-main-text {
-  padding-bottom: 10px;
+  padding-bottom: 15px;
+  height: 110px;
 }
 
 .news-high-text {
+  height: 60px;
 }
