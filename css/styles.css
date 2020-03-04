@@ -10,8 +10,10 @@
   --main-text-color: #555252;
   --supp-text-color: #1abc9c;
   --third-text-color: #ffffff;
+  --price-tag-color: #8c8c8c ; 
   --main-text-font-style: "DejaVu Sans", Arial, Helvetica, sans-serif;
   --supp-text-font-style: ;
+
 }
 
 body {
@@ -96,26 +98,32 @@ h6 {
 .main-container-child {
   display: flex;
   flex-wrap: wrap;
-  /* height: 100px; */
+  /* height: 320px; */
   margin: auto;
   width: 20%;
-  max-width: 300px;
+  max-width: 255px;
   margin-top: 10px;
   margin-right: 10px;
   justify-self: flex-start;
-  margin-bottom: 10px;
+  /* margin-bottom: px; */
 }
 
 .main-container-child > img {
-  width: 200px;
+  width: 255px;
+  height: 280px;
+  margin: 0px;
 }
 
 .main-container-child-name {
-  margin-right: 20px;
+  margin: 0px;
+  width: 200px;
+  background-color: var(--main-text-color);
 }
 
 .main-container-child-price {
-  max-width: 50px;
+  margin: 0px;
+  width: 55px;
+  background-color: var(--price-tag-color);
 }
 
 .second-title {
